@@ -1,0 +1,113 @@
+*lukas.txt*   Lukas' VIM functions, mappings, shortcuts etc.
+
+==============================================================================
+Author:  Lukas Pustina <lukas.pustina@gmail.com>                *lukas-author*
+License: MIT
+
+==============================================================================
+INTRODUCTION                                                           *lukas*
+
+This plugin is actually just a help file for myself, because my brain is to
+reluctant to memorize all the fancy functions, mappings, shortcuts etc.
+
+==============================================================================
+MAPPINGS                                                      *lukas-mappings*
+
+Leader is set to `,`.
+
+Command Line Mode Mappings                  *lukas-mappings-command-line-mode*
+
+$c
+<C-a>
+<C-b>
+<C-d>
+<C-e>
+<C-f>
+<C-g>
+<Esc>b
+<Esc>d
+<Esc>f
+<M-b>
+<M-d>
+<M-f>
+
+Insert Mode Mappings                              *lukas-mappings-insert-mode*
+
+<C-a>
+<C-e>
+
+Insert Mode Mappings                              *lukas-mappings-insert-mode*
+
+Normal, Visual and Select as well as Operator Pending Mode Mappings
+                                                    *lukas-mappings-nvso-mode*
+
+/
+?
+g/
+
+Normal Mode Mappings                              *lukas-mappings-normal-mode*
+
+<C-e>
+<C-h>
+<C-j>
+<C-k>
+<C-l>
+<C-n>
+<C-p>
+<C-x>0
+<C-x>1
+<C-x>1
+<C-x>1
+<C-x>o
+<Esc>K
+<Esc>k
+<Esc>w
+<Leader>a
+<Leader>b
+<Leader>f
+<Leader>t
+<Leader>z
+<M-S-k>
+<M-k>
+<M-o>
+<leader>h
+<leader>n
+<leader>p
+\A
+\M
+\S
+\T
+\a
+\b
+\c
+\f
+\g
+\i
+\l
+\m
+\p
+\r
+\s
+\t
+\u
+\w
+\x
+\z
+˚
+∑
+<C-w>h
+<C-w>l
+<space>
+
+Visual Mode Mappings                              *lukas-mappings-visual-mode*
+
+<space>
+
+To adjust these mappings, see ~/.vimrc.
+
+==============================================================================
+ISSUES AND FAQ                                                 *lukas-gen-doc*
+
+cat ~/.vimrc | grep -v '^"' | grep 'map' | sort | awk '{print $1 " " $2}'
+
+vim:set et sw=4 ts=4 tw=78:
