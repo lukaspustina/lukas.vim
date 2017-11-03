@@ -11,19 +11,25 @@ This plugin is actually just a help file for myself, because my brain is to
 reluctant to memorize all the fancy functions, mappings, shortcuts etc.
 
 ==============================================================================
+COMMANDS                                                      *lukas-commands*
+
+BufCloseOthers               Close all buffers but this one.
+CLEAN                        retab and TEOL
+TEOL                         Trim spaces at end of line.
+
+==============================================================================
 MAPPINGS                                                      *lukas-mappings*
 
 Leader is set to `,`.
 
 Command Line Mode Mappings                  *lukas-mappings-command-line-mode*
 
-$c
-<C-a>
-<C-b>
-<C-d>
-<C-e>
-<C-f>
-<C-g>
+$c                           Edit file in directory of current open file.
+<C-a>                        Start
+<C-b>                        Left
+<C-d>                        Delete
+<C-e>                        End
+<C-f>                        Right
 <Esc>b
 <Esc>d
 <Esc>f
@@ -33,70 +39,63 @@ $c
 
 Insert Mode Mappings                              *lukas-mappings-insert-mode*
 
-<C-a>
-<C-e>
+<C-a>                        0; Start of line
+<C-e>                        $; End of line
 
 Insert Mode Mappings                              *lukas-mappings-insert-mode*
 
 Normal, Visual and Select as well as Operator Pending Mode Mappings
                                                     *lukas-mappings-nvso-mode*
 
-/
-?
-g/
+/                            incsearch forward
+?                            incsearch backward
+g/                           incsearch but don't move
 
 Normal Mode Mappings                              *lukas-mappings-normal-mode*
 
-<C-e>
-<C-h>
-<C-j>
-<C-k>
-<C-l>
-<C-n>
-<C-p>
-<C-x>0
-<C-x>1
-<C-x>1
-<C-x>1
+<C-e>                        Switch to previous buffer.
+<C-h>                        Move focus to window on the left.
+<C-j>                        Move focus to window below.
+<C-k>                        Move focus to window above.
+<C-l>                        Move focus to window on the right.
+<C-n>                        Next buffer
+<C-p>                        Previous buffer
+<C-w>h                       Window switching helper.
+<C-w>l                       Window switching helper.
+<C-x>0                       Remove vertical split window.
+<C-x>1                       Split vertically.
 <C-x>o
-<Esc>K
-<Esc>k
+<Esc>K                       Search for word under the cursor with Ggrep.
+<Esc>k                       Search for word under the cursor with Ack.
 <Esc>w
-<Leader>a
-<Leader>b
-<Leader>f
-<Leader>t
-<Leader>z
-<M-S-k>
-<M-k>
-<M-o>
-<leader>h
-<leader>n
-<leader>p
-\A
+<Leader>b                    Show open buffers chooser.
+<Leader>f                    FZF file open
+<Leader>g                    :Gstats
+<Leader>h                    nohlsearch
+<Leader>n                    NERDTreeToggle
+<Leader>p                    Toggle paste mode.
+<Leader>t                    Show tags.
+<Leader>z                    Fix spelling error with first alternative.
+\A                           Enable autowrap.
 \M
-\S
+\S                           Toggle spell checking en_us
 \T
-\a
+\a                           Disable autowrap.
 \b
 \c
 \f
-\g
 \i
 \l
 \m
 \p
-\r
 \s
 \t
-\u
-\w
+\u                           Toogle list.
+\w                           Toogle wrap.
 \x
 \z
 ˚
 ∑
-<C-w>h
-<C-w>l
 <space>
 
 Visual Mode Mappings                              *lukas-mappings-visual-mode*
@@ -104,10 +103,5 @@ Visual Mode Mappings                              *lukas-mappings-visual-mode*
 <space>
 
 To adjust these mappings, see ~/.vimrc.
-
-==============================================================================
-ISSUES AND FAQ                                                 *lukas-gen-doc*
-
-cat ~/.vimrc | grep -v '^"' | grep 'map' | sort | awk '{print $1 " " $2}'
 
 vim:set et sw=4 ts=4 tw=78:
