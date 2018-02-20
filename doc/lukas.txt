@@ -42,8 +42,6 @@ Insert Mode Mappings                              *lukas-mappings-insert-mode*
 <C-a>                        0; Start of line
 <C-e>                        $; End of line
 
-Insert Mode Mappings                              *lukas-mappings-insert-mode*
-
 Normal, Visual and Select as well as Operator Pending Mode Mappings
                                                     *lukas-mappings-nvso-mode*
 
@@ -101,6 +99,22 @@ Normal Mode Mappings                              *lukas-mappings-normal-mode*
 Visual Mode Mappings                              *lukas-mappings-visual-mode*
 
 <space>
+
+
+==============================================================================
+PLUGIN COMMANDS                                        *lukas-plugin-commands*
+
+vim-surround                              *lukas-plugin-commands-vim-surround*
+    cf. https://github.com/tpope/vim-surround
+    :help surround
+
+cs([                         change '(.*)' to '[ .* ]'           [normal mode]
+cs(]                         change '(.*)' to '[.*]'             [normal mode]
+
+ds"                          delete " delimiters                 [normal mode]
+
+ysiw<em>                     surround 'word' to '<em>word</em>   [normal mode]
+
 
 To adjust these mappings, see ~/.vimrc.
 
