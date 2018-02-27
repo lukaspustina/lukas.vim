@@ -118,4 +118,9 @@ ysiw<em>                     surround 'word' to '<em>word</em>   [normal mode]
 
 To adjust these mappings, see ~/.vimrc.
 
+==============================================================================
+LINKS                                                            *lukas-links*
+
+Vim Regular Expression -- http://vimregex.com
+
 vim:set et sw=4 ts=4 tw=78:
