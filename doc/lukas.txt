@@ -95,6 +95,8 @@ Normal Mode Mappings                              *lukas-mappings-normal-mode*
 ˚
 ∑
 <space>
+gd                           Goto to definition in same file.
+
 
 Visual Mode Mappings                              *lukas-mappings-visual-mode*
 
