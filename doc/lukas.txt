@@ -13,9 +13,18 @@ reluctant to memorize all the fancy functions, mappings, shortcuts etc.
 ==============================================================================
 COMMANDS                                                      *lukas-commands*
 
+
+Built-in commands                                     *lukas-command-built-in*
+
+so %                         Source current file; useful to relad config while
+                             editing.
+
+Self defined commands                                     *lukas-command-self*
+
 BufCloseOthers               Close all buffers but this one.
 CLEAN                        retab and TEOL
 TEOL                         Trim spaces at end of line.
+
 
 ==============================================================================
 MAPPINGS                                                      *lukas-mappings*
@@ -69,6 +78,7 @@ Normal Mode Mappings                              *lukas-mappings-normal-mode*
 <Leader>b                    Show open buffers chooser.
 <Leader>f                    FZF file open
 <Leader>g                    :Gstats
+<Leader>G                    YcmCompleter GoTo -- goto definition
 <Leader>h                    nohlsearch
 <Leader>n                    NERDTreeToggle
 <Leader>p                    Toggle paste mode.
