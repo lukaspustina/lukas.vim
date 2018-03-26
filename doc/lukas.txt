@@ -24,7 +24,7 @@ Self defined commands                                     *lukas-command-self*
 BufCloseOthers               Close all buffers but this one.
 CLEAN                        retab and TEOL
 TEOL                         Trim spaces at end of line.
-
+InsertFileType               Insert modeline for file type at end of file
 
 ==============================================================================
 MAPPINGS                                                      *lukas-mappings*
