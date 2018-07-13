@@ -19,6 +19,10 @@ Built-in commands                                     *lukas-command-built-in*
 so %                         Source current file; useful to relad config while
                              editing.
 
+Q                            Start ex mode -- like normal, but w/o pressing
+                             ':' all the time. Type ':visual' to return to
+                             normal mode.
+
 Self defined commands                                     *lukas-command-self*
 
 BufCloseOthers               Close all buffers but this one.
@@ -67,6 +71,8 @@ Normal Mode Mappings                              *lukas-mappings-normal-mode*
 <C-l>                        Move focus to window on the right.
 <C-n>                        Next buffer
 <C-p>                        Previous buffer
+<C-o>                        Jump to previous jumplist entry.
+<C-i>                        Jump to previous jumplist entry.
 <C-w>h                       Window switching helper.
 <C-w>l                       Window switching helper.
 <C-x>0                       Remove vertical split window.
@@ -134,5 +140,14 @@ To adjust these mappings, see ~/.vimrc.
 LINKS                                                            *lukas-links*
 
 Vim Regular Expression -- http://vimregex.com
+
+`normal` command -- https://tomjwatson.com/blog/vim-tips/
+The `normal` commands applies commands to a line, e.g., `:% norm wwvU` will
+jump to the second word, visually select it and then uppercase it.
+
+`global` command -- https://tomjwatson.com/blog/vim-tips/
+The `g`lobal commands applies a command against lines matching a search
+pattern, e.g., `g/"T/norm 2wvwU` will find all lines that contain '"T' and
+then apply the normal command.
 
 vim:set et sw=4 ts=4 tw=78:
