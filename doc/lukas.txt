@@ -89,7 +89,8 @@ Normal Mode Mappings                              *lukas-mappings-normal-mode*
 <Leader>g                    :Gstats
 <Leader>G                    YcmCompleter GoTo -- goto definition
 <Leader>h                    nohlsearch
-<Leader>n                    NERDTreeToggle
+<Leader>N                    NERDTreeToggle
+<Leader>U                    UndotreeToggle
 <Leader>p                    Toggle paste mode.
 <Leader>t                    Show tags.
 <Leader>z                    Fix spelling error with first alternative.
